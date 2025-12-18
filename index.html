@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>家长养育风格调研问卷</title>
+    <title>家庭教育需求调研</title>
     <!-- 引入 Tailwind CSS 进行美化 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- 引入 Lucide Icons 图标库 -->
@@ -48,7 +48,7 @@
         <div id="header-section" class="mb-8 text-center fade-in">
             <h1 class="text-3xl font-bold text-indigo-900 mb-2">家庭教育需求调研</h1>
             <p class="text-slate-600">
-                我们致力于打造更懂家长、更有效的育儿工具。完成本问卷大约需要 3 分钟。
+                我们致力于打造更懂家长、更有效的育儿工具。完成本问卷大约需要 2分钟。
             </p>
         </div>
 
@@ -60,7 +60,7 @@
                 </div>
                 <h2 class="text-2xl font-bold text-slate-800 mb-2">感谢您的参与！</h2>
                 <p class="text-slate-600 mb-6">
-                    您的反馈对我们至关重要。如果我们启动了“情境化养育测评”的内测，会第一时间通过邮件联系您。
+                    您的反馈对我们至关重要。如果我们启动了“情境化养育测评”的内测，会第一时间联系您。
                 </p>
                 <button onclick="location.reload()" class="text-indigo-600 font-medium hover:text-indigo-800 transition-colors">
                     返回首页
@@ -82,107 +82,114 @@
                 </div>
             </div>
 
-            <!-- 第一部分：自我觉察与痛点 -->
+            <!-- 第一部分：育儿现状与痛点 -->
             <div id="step-1" class="step-content active fade-in">
                 <!-- 板块头部 -->
                 <div class="bg-white rounded-t-xl p-6 border-b border-slate-100 flex items-start gap-4">
                     <div class="p-3 bg-indigo-50 rounded-lg text-indigo-600 shrink-0">
-                        <i data-lucide="user" class="w-6 h-6"></i>
+                        <i data-lucide="heart-crack" class="w-6 h-6"></i>
                     </div>
                     <div>
-                        <h2 class="text-xl font-bold text-slate-800">第一部分：自我觉察与痛点</h2>
-                        <p class="text-sm text-slate-500 mt-1">请回顾您的日常养育现状，帮助我们了解您的真实感受。</p>
+                        <h2 class="text-xl font-bold text-slate-800">第一部分：育儿现状与痛点</h2>
+                        <p class="text-sm text-slate-500 mt-1">先共情，后分析。请分享您真实的“头疼”时刻。</p>
                     </div>
                 </div>
 
                 <!-- 问题列表 -->
                 <div class="bg-white rounded-b-xl shadow-sm mb-6 p-6 space-y-8 border-x border-b border-slate-100">
                     
-                    <!-- Q1 -->
+                    <!-- Q1 (原Q3前置) -->
                     <div class="space-y-4">
-                        <h3 class="font-semibold text-lg text-slate-800 leading-relaxed">Q1. 您目前对“教养风格”（如权威型、专制型、溺爱型等）这一心理学概念的了解程度是？</h3>
-                        <div class="space-y-3">
+                        <div class="flex items-start gap-2">
+                            <span class="bg-indigo-100 text-indigo-700 text-xs font-bold px-2 py-1 rounded mt-1">多选</span>
+                            <h3 class="font-semibold text-lg text-slate-800 leading-relaxed">Q1. 在最近的日常养育中，最让您感到“头疼”或希望能改善的问题有哪些？</h3>
+                        </div>
+                        <div class="grid grid-cols-1 gap-3">
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="radio" name="q1" value="1" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(1) 完全没听过</span>
+                                <input type="checkbox" name="q1" value="生活习惯" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">生活习惯：磨蹭拖拉、不爱刷牙、吃饭看iPad、作息不规律</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="radio" name="q1" value="2" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(2) 听说过，但不确定自己是哪一种</span>
+                                <input type="checkbox" name="q1" value="学业压力" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">学业压力：辅导作业鸡飞狗跳、成绩焦虑、缺乏主动性</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="radio" name="q1" value="3" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(3) 有一定了解，能大概判断自己的风格</span>
+                                <input type="checkbox" name="q1" value="情绪管理" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">情绪管理：孩子脾气大、爱哭闹、摔东西、抗挫折能力差</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="radio" name="q1" value="4" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(4) 非常了解，并能有意识地调整</span>
+                                <input type="checkbox" name="q1" value="规则意识" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">规则意识：说话不算数、撒谎、答应好的事做不到、难以管教</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="radio" name="q1" value="5" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(5) 我是这方面的专家/以此为职业</span>
+                                <input type="checkbox" name="q1" value="亲子沟通" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">亲子沟通：孩子不愿跟我说话、顶嘴、甚至有言语/肢体冲突</span>
+                            </label>
+                            <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
+                                <input type="checkbox" name="q1" value="物质欲望" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">物质欲望：攀比心理、想要的东西必须买、不懂得珍惜</span>
+                            </label>
+                            <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
+                                <input type="checkbox" name="q1" value="社交表现" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">社交表现：过于害羞不敢社交，或者太霸道、爱抢玩具</span>
+                            </label>
+                            <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
+                                <input type="checkbox" name="q1" value="其他" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">其他</span>
                             </label>
                         </div>
                     </div>
 
                     <!-- Q2 -->
                     <div class="space-y-4">
-                        <h3 class="font-semibold text-lg text-slate-800 leading-relaxed">Q2. 如果给您现在的“养育状态”打分，您对自己处理亲子冲突和引导孩子的能力满意度是？</h3>
+                        <h3 class="font-semibold text-lg text-slate-800 leading-relaxed">Q2. 如果给您现在的“养育状态”打个分，您对自己处理亲子冲突和引导孩子的能力满意吗？</h3>
                         <div class="space-y-3">
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
                                 <input type="radio" name="q2" value="1" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(1) 非常焦虑/挫败，经常不知道该怎么办</span>
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">感到很挫败</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
                                 <input type="radio" name="q2" value="2" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(2) 不太满意，时常感到力不从心</span>
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">时常感到力不从心</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
                                 <input type="radio" name="q2" value="3" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(3) 及格，能应对日常，但遇到难题会卡住</span>
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">能应对日常，但遇到新难题会卡住</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
                                 <input type="radio" name="q2" value="4" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(4) 比较满意，和孩子关系不错</span>
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">和孩子关系不错，大部分问题能解决</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
                                 <input type="radio" name="q2" value="5" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(5) 非常自信，游刃有余</span>
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">非常自信，享受养育过程</span>
                             </label>
                         </div>
                     </div>
 
-                    <!-- Q3 -->
+                    <!-- Q3 (原Q1后置) -->
                     <div class="space-y-4">
-                        <h3 class="font-semibold text-lg text-slate-800 leading-relaxed">Q3. 【多选】在日常养育中，您目前感到最棘手/最Concern的问题是哪些？</h3>
-                        <div class="grid grid-cols-1 gap-3">
+                        <h3 class="font-semibold text-lg text-slate-800 leading-relaxed">Q3. 您听说过“教养风格”（如权威型、专制型、溺爱型等）这一心理学概念吗？</h3>
+                        <div class="space-y-3">
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q3" value="生活习惯" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">生活习惯：磨蹭、不爱刷牙、吃饭看iPad、作息不规律</span>
+                                <input type="radio" name="q3" value="1" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(1) 完全没听过</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q3" value="学业压力" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">学业压力：辅导作业鸡飞狗跳、成绩焦虑、缺乏学习动力</span>
+                                <input type="radio" name="q3" value="2" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(2) 听说过一点，但不确定自己属于哪一种</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q3" value="情绪管理" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">情绪管理：孩子脾气大、爱哭闹、摔东西、抗挫折能力差</span>
+                                <input type="radio" name="q3" value="3" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(3) 有一定了解，大概知道自己的风格倾向</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q3" value="规则意识" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">规则意识：说话不算数、甚至撒谎、不仅听管教</span>
+                                <input type="radio" name="q3" value="4" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(4) 非常了解，并在养育中能有意识地觉察和调整</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q3" value="亲子沟通" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">亲子沟通：孩子不愿跟我说话、顶嘴、甚至言语攻击</span>
-                            </label>
-                            <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q3" value="物质欲望" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">物质欲望：攀比、想要的东西必须买、不懂得珍惜</span>
-                            </label>
-                            <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q3" value="社交能力" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">社交能力：害羞不敢社交、或者太霸道抢玩具</span>
+                                <input type="radio" name="q3" value="5" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(5) 我是相关从业者/专家</span>
                             </label>
                         </div>
                     </div>
@@ -190,16 +197,16 @@
                 </div>
             </div>
 
-            <!-- 第二部分：测评与提升意向 -->
+            <!-- 第二部分：工具体验意向 -->
             <div id="step-2" class="step-content fade-in">
                 <!-- 板块头部 -->
                 <div class="bg-white rounded-t-xl p-6 border-b border-slate-100 flex items-start gap-4">
                     <div class="p-3 bg-indigo-50 rounded-lg text-indigo-600 shrink-0">
-                        <i data-lucide="clipboard-list" class="w-6 h-6"></i>
+                        <i data-lucide="gamepad-2" class="w-6 h-6"></i>
                     </div>
                     <div>
-                        <h2 class="text-xl font-bold text-slate-800">第二部分：测评与提升意向</h2>
-                        <p class="text-sm text-slate-500 mt-1">我们正在开发更有趣的互动测评工具，期待您的反馈。</p>
+                        <h2 class="text-xl font-bold text-slate-800">第二部分：工具体验意向</h2>
+                        <p class="text-sm text-slate-500 mt-1">我们正在研发一款拒绝枯燥说教的互动测评工具，帮您看见盲区，找到方法。</p>
                     </div>
                 </div>
 
@@ -208,7 +215,7 @@
                     
                     <!-- Q4 -->
                     <div class="space-y-4">
-                        <h3 class="font-semibold text-lg text-slate-800 leading-relaxed">Q4. 如果有一套专业的测评工具，能通过模拟真实场景（而非枯燥的题目）精准分析您的养育风格，您愿意尝试吗？</h3>
+                        <h3 class="font-semibold text-lg text-slate-800 leading-relaxed">Q4. 如果有一套工具，能通过“模拟真实生活场景”（而非做题目）来精准分析您的养育风格，您愿意尝试吗？</h3>
                         <div class="space-y-3">
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
                                 <input type="radio" name="q4" value="1" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
@@ -216,73 +223,49 @@
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
                                 <input type="radio" name="q4" value="2" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(2) 有点犹豫，看情况</span>
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(2) 看情况，如果有空可能会看看</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
                                 <input type="radio" name="q4" value="3" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(3) 愿意尝试，想知道结果</span>
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(3) 愿意尝试，纯粹好奇结果</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
                                 <input type="radio" name="q4" value="4" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(4) 非常想测，希望能发现盲区</span>
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(4) 非常想测，希望能发现自己的盲区</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
                                 <input type="radio" name="q4" value="5" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(5) 迫切需要，希望能立刻得到改进建议</span>
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(5) 迫切需要，希望能测完立刻给我改进建议！</span>
                             </label>
                         </div>
                     </div>
 
                     <!-- Q5 -->
                     <div class="space-y-4">
-                        <h3 class="font-semibold text-lg text-slate-800 leading-relaxed">Q5. 您对学习更科学的家庭教育方式、改善亲子关系的兴趣程度是？</h3>
+                        <div class="flex items-start gap-2">
+                            <span class="bg-indigo-100 text-indigo-700 text-xs font-bold px-2 py-1 rounded mt-1">多选</span>
+                            <h3 class="font-semibold text-lg text-slate-800 leading-relaxed">Q5. 如果要进行“养育风格测试”，您最喜欢哪种形式？（选您觉得最不累、最好玩的）</h3>
+                        </div>
                         <div class="space-y-3">
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="radio" name="q5" value="1" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(1) 没兴趣，顺其自然就好</span>
+                                <input type="checkbox" name="q5" value="快问快答" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">⏱️ 传统快问快答：经典选择题（如：遇到这种情况你会怎么做？A/B/C）</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="radio" name="q5" value="2" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(2) 有一点兴趣，但没时间学</span>
+                                <input type="checkbox" name="q5" value="视频情境" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">🎬 视频情境题：看一段孩子闹脾气的短视频，点击选择您的第一反应</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="radio" name="q5" value="3" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(3) 一般，遇到问题才会想去查</span>
+                                <input type="checkbox" name="q5" value="RPG游戏" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">🎮 角色扮演游戏 (RPG)：像玩游戏一样，在剧情中扮演家长，通过对话推进故事</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="radio" name="q5" value="4" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(4) 很有兴趣，经常在看相关文章</span>
+                                <input type="checkbox" name="q5" value="AI对话" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">🤖 AI 聊天评估：像和朋友聊天一样，跟AI吐槽烦恼，由它分析您的风格</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="radio" name="q5" value="5" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(5) 非常渴望，愿意投入时间系统学习</span>
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- Q6 -->
-                    <div class="space-y-4">
-                        <h3 class="font-semibold text-lg text-slate-800 leading-relaxed">Q6. 【多选】如果您决定进行“养育风格测试”，您更希望通过哪种形式来完成？</h3>
-                        <div class="grid grid-cols-1 gap-3">
-                            <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q6" value="传统问卷" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">传统问卷：快速回答选择题（如：遇到这种情况你会怎么做？A/B/C/D）</span>
-                            </label>
-                            <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q6" value="视频情境题" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">视频情境题：观看一段孩子闹脾气的短视频，选择您的真实反应</span>
-                            </label>
-                            <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q6" value="RPG游戏" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">角色扮演游戏 (RPG)：在互动游戏中扮演家长，通过对话选择推动剧情</span>
-                            </label>
-                            <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q6" value="AI对话" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">AI 对话评估：和 AI 助手聊聊最近的烦恼，由 AI 分析您的风格</span>
-                            </label>
-                            <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q6" value="亲子互动" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">亲子互动任务：线下和孩子完成一个小任务，自己记录过程</span>
+                                <input type="checkbox" name="q5" value="亲子互动" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">📝 亲子实操任务：线下和孩子完成一个小互动，记录过程并上传</span>
                             </label>
                         </div>
                     </div>
@@ -290,15 +273,15 @@
                 </div>
             </div>
 
-            <!-- 第三部分：学习偏好与交付形式 -->
+            <!-- 第三部分：学习偏好与需求 -->
             <div id="step-3" class="step-content fade-in">
                 <!-- 板块头部 -->
                 <div class="bg-white rounded-t-xl p-6 border-b border-slate-100 flex items-start gap-4">
                     <div class="p-3 bg-indigo-50 rounded-lg text-indigo-600 shrink-0">
-                        <i data-lucide="book-open" class="w-6 h-6"></i>
+                        <i data-lucide="book-open-check" class="w-6 h-6"></i>
                     </div>
                     <div>
-                        <h2 class="text-xl font-bold text-slate-800">第三部分：学习偏好与交付形式</h2>
+                        <h2 class="text-xl font-bold text-slate-800">第三部分：学习偏好与需求</h2>
                         <p class="text-sm text-slate-500 mt-1">我们要如何把知识传递给您，才能对您最有帮助？</p>
                     </div>
                 </div>
@@ -306,56 +289,89 @@
                 <!-- 问题列表 -->
                 <div class="bg-white rounded-b-xl shadow-sm mb-6 p-6 space-y-8 border-x border-b border-slate-100">
                     
+                    <!-- Q6 -->
+                    <div class="space-y-4">
+                        <h3 class="font-semibold text-lg text-slate-800 leading-relaxed">Q6. 对于“学习更科学的育儿方法、改善亲子关系”，您目前的真实心态是？</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
+                                <input type="radio" name="q6" value="1" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(1) 顺其自然，孩子大了自然就好了</span>
+                            </label>
+                            <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
+                                <input type="radio" name="q6" value="2" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(2) 有心无力，想学但太忙没时间</span>
+                            </label>
+                            <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
+                                <input type="radio" name="q6" value="3" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(3) 问题驱动，遇到搞不定的事才会去查资料</span>
+                            </label>
+                            <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
+                                <input type="radio" name="q6" value="4" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(4) 持续关注，经常阅读相关文章或视频</span>
+                            </label>
+                            <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
+                                <input type="radio" name="q6" value="5" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">(5) 极度渴望，愿意投入时间甚至金钱系统学习</span>
+                            </label>
+                        </div>
+                    </div>
+
                     <!-- Q7 -->
                     <div class="space-y-4">
-                        <h3 class="font-semibold text-lg text-slate-800 leading-relaxed">Q7. 【多选】在获取养育知识或解决方案时，您更倾向于哪种内容形式？</h3>
+                        <div class="flex items-start gap-2">
+                            <span class="bg-indigo-100 text-indigo-700 text-xs font-bold px-2 py-1 rounded mt-1">多选</span>
+                            <h3 class="font-semibold text-lg text-slate-800 leading-relaxed">Q7. 如果有专家为您提供建议，您更倾向于哪种内容形式？</h3>
+                        </div>
                         <div class="grid grid-cols-1 gap-3">
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q7" value="碎片化图文" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">碎片化图文：像小红书一样的知识卡片、Checklist</span>
+                                <input type="checkbox" name="q7" value="极简清单" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">📑 极简清单 (Checklist)：类似小红书的知识卡片，一看就懂，拿来就用</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
                                 <input type="checkbox" name="q7" value="短视频" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">短视频/情景剧：1-3分钟的视频，展示错误vs正确示范</span>
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">📱 短视频/情景剧：1-3分钟视频，直观展示“错误示范 vs 正确做法”</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q7" value="手册" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">系统化手册 (Handbook)：电子书或PDF指南，适合深度阅读</span>
+                                <input type="checkbox" name="q7" value="系统手册" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">📖 系统化手册 (E-book)：电子书或PDF指南，适合深度阅读和查阅</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q7" value="直播" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">在线直播/讲座：专家连线，可以互动提问</span>
+                                <input type="checkbox" name="q7" value="在线直播" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">💬 在线直播/连线：可以向专家提问，实时互动</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q7" value="互动练习" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">互动式练习课：每天一个小任务（如：今天练习“我”字句），打卡完成</span>
+                                <input type="checkbox" name="q7" value="训练营" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">🏃 互动式训练营：每天一个小任务，打卡完成</span>
                             </label>
                         </div>
                     </div>
 
                     <!-- Q8 -->
                     <div class="space-y-4">
-                        <h3 class="font-semibold text-lg text-slate-800 leading-relaxed">Q8. 【多选】如果测评报告指出了您的问题，您最希望获得哪方面的具体帮助？</h3>
+                        <div class="flex items-start gap-2">
+                            <span class="bg-indigo-100 text-indigo-700 text-xs font-bold px-2 py-1 rounded mt-1">多选</span>
+                            <h3 class="font-semibold text-lg text-slate-800 leading-relaxed">Q8. 如果测评报告指出了您的养育盲区，您最希望获得什么具体的帮助？</h3>
+                        </div>
                         <div class="grid grid-cols-1 gap-3">
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q8" value="认知升级" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">认知升级：告诉我为什么孩子会这样（心理学原理）</span>
+                                <input type="checkbox" name="q8" value="原理认知" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">🧠 原理认知：告诉我为什么孩子会这样（懂心理学逻辑）</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
                                 <input type="checkbox" name="q8" value="话术参考" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">话术参考：直接告诉我这种情况下该说什么（Specific Scripts）</span>
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">🗣️ 话术参考 (Scripts)：直接教我这句话该怎么说（拿来就能用）</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
                                 <input type="checkbox" name="q8" value="行动指南" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">行动指南：一步步的行动计划（Step-by-step Action Plan）</span>
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">🗺️ 行动指南 (Action Plan)：第一步做什么、第二步做什么（具体步骤）</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q8" value="案例库" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">案例库：看看别的家长是怎么解决类似问题的</span>
+                                <input type="checkbox" name="q8" value="案例对标" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">👀 案例对标：看看别的家长遇到同样问题是怎么解决的</span>
                             </label>
                             <label class="flex items-start p-3 rounded-lg border border-slate-200 hover:border-indigo-300 hover:bg-slate-50 cursor-pointer transition-all group">
-                                <input type="checkbox" name="q8" value="社群支持" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
-                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">社群支持：和其他家长一起吐槽、交流经验</span>
+                                <input type="checkbox" name="q8" value="社群抱团" class="mt-1 w-4 h-4 text-indigo-600 border-slate-300 rounded focus:ring-indigo-500 accent-indigo-600">
+                                <span class="ml-3 text-sm font-medium text-slate-700 group-hover:text-indigo-900">🤝 社群抱团：和其他家长一起吐槽、交流，互相打气</span>
                             </label>
                         </div>
                     </div>
@@ -365,11 +381,11 @@
                         <div class="flex items-start gap-3">
                             <i data-lucide="mail" class="w-6 h-6 mt-1 shrink-0"></i>
                             <div class="w-full">
-                                <h3 class="text-lg font-bold mb-2">成为首批体验官</h3>
+                                <h3 class="text-lg font-bold mb-2">成为首批内测体验官</h3>
                                 <p class="text-indigo-100 text-sm mb-4">
                                     如果您愿意，请留下您的联系方式。我们将邀请您免费体验“情境化养育测评” Beta 版。
                                 </p>
-                                <input type="text" name="email" placeholder="请输入您的邮箱或微信（选填）" class="w-full px-4 py-3 rounded-lg text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all">
+                                <input type="text" name="contact" placeholder="请输入您的微信或手机号（选填）" class="w-full px-4 py-3 rounded-lg text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-white/50 transition-all">
                             </div>
                         </div>
                     </div>
@@ -423,9 +439,6 @@
 
         // 切换步骤函数
         function changeStep(direction) {
-            // 简单的验证逻辑（可选：可以在这里检查必填项）
-            // if (direction === 1 && !validateCurrentStep()) return;
-
             // 计算新步骤
             const newStep = currentStep + direction;
 
